@@ -1,6 +1,6 @@
 import styles from './App.module.css'
 import Title from "./Title.tsx";
-import StatusBlock from "./StatusBlock.tsx";
+import StatusBlock from "./StatusBlock/StatusBlock.tsx";
 
 function App() {
   return (
