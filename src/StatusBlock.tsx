@@ -3,8 +3,11 @@ import Light from "./Light.tsx";
 
 function StatusBlock() {
   return (
-    <div className="status-block">
-        <div className="lights">
+    <div className={styles["wrapper"]}>
+        <div className={styles["title"]}>
+            Title
+        </div>
+        <div className={styles["lights"]}>
             <Light name="Connection"></Light>
             <Light name="Ram"></Light>
             <Light name="Storage"></Light>

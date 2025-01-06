@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.lights{
+    display: flex;
+    flex-direction: row;
+}

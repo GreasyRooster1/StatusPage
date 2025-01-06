@@ -1,3 +1,4 @@
+import styles from "./Light.module.css"
 
 interface LightProps {
     name: string;
@@ -5,9 +6,9 @@ interface LightProps {
 
 function Light(props:LightProps) {
     return (
-        <div className = "wrapper">
-            <span className="light"></span>
-            <span className="title">{props.name}</span>
+        <div className ={styles["wrapper"]}>
+            <span className={styles["light"]}></span>
+            <span className={styles["title"]}>{props.name}</span>
         </div>
     );
 }
