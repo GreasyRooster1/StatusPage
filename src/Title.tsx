@@ -1,4 +1,4 @@
-import './Title.css'
+import './Title.module.css'
 
 function Title() {
   return (
