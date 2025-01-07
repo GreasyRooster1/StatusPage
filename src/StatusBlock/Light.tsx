@@ -7,7 +7,7 @@ interface LightProps {
 function Light(props:LightProps) {
     return (
         <div className ={styles["wrapper"]}>
-            <span className={styles["light"]}></span>
+            <div className={styles["light"]}></div>
             <span className={styles["title"]}>{props.name}</span>
         </div>
     );
