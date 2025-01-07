@@ -1,12 +1,11 @@
 import styles from './StatusBlock.module.css'
 import Status from "./Status.tsx";
+import Title from "../Title.tsx";
 
 function StatusBlock() {
   return (
     <div className={styles["wrapper"]}>
-        <div className={styles["title"]}>
-            Title
-        </div>
+        <Title/>
         <div className={styles["lights"]}>
             <Status name="Connection"></Status>
             <Status name="Ram"></Status>

@@ -7,3 +7,8 @@
 
     background: var(--app-background);
 }
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+}

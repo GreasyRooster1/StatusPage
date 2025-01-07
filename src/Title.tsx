@@ -1,9 +1,9 @@
-import './Title.module.css'
+import styles from'./Title.module.css'
 
 function Title() {
   return (
-    <span>
-        Status
+    <span className={styles["title"]}>
+        Title
     </span>
   )
 }

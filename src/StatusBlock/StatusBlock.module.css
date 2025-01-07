@@ -3,12 +3,9 @@
     flex-direction: column;
     width: 75%;
     min-height: 45vh;
-    background:var(--status-block-background)
-}
-
-.title{
-    text-align: center;
-    font-size: 3rem;
+    background:var(--status-block-background);
+    border-radius: 20px;
+    padding:10px;
 }
 
 .lights{
