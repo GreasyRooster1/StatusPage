@@ -3,8 +3,6 @@
 }
 
 .light{
-    border-radius:100%;
-    aspect-ratio: 1;
     width: 0.9em;
     background:var(--status-light-disconnected);
     display: inline-block;

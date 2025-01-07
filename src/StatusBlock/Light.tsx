@@ -1,6 +1,7 @@
 import styles from "./Light.module.css"
 import {useEffect, useState} from "react";
 import axios from 'axios';
+import Circle from "../util/Circle.tsx";
 
 interface LightProps {
     name: string;
@@ -28,7 +29,7 @@ function Light(props:LightProps) {
     return (
         <div className ={styles["wrapper"]}>
             <div className={styles["top"]}>
-                <div className={styles["light"]}></div>
+                <Circle className={styles["light"]}></Circle>
                 <span className={styles["title"]}>{props.name}</span>
             </div>
             <div className={styles["details"]}>
