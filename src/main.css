@@ -12,9 +12,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body{
+  margin: 0;
+}
 
 .theme-default{
+  --app-background: #1b1b22;
   --status-block-background: #252430;
+
   --status-light-bad: #d64444;
   --status-light-ok: #d6be44;
   --status-light-good: #6dd644;
