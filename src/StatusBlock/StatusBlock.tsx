@@ -1,5 +1,5 @@
 import styles from './StatusBlock.module.css'
-import Light from "./Light.tsx";
+import Status from "./Status.tsx";
 
 function StatusBlock() {
   return (
@@ -8,11 +8,11 @@ function StatusBlock() {
             Title
         </div>
         <div className={styles["lights"]}>
-            <Light name="Connection"></Light>
-            <Light name="Ram"></Light>
-            <Light name="Storage"></Light>
-            <Light name="CPU"></Light>
-            <Light name="Temp"></Light>
+            <Status name="Connection"></Status>
+            <Status name="Ram"></Status>
+            <Status name="Storage"></Status>
+            <Status name="CPU"></Status>
+            <Status name="Temp"></Status>
         </div>
     </div>
   )

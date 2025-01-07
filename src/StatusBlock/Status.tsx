@@ -1,4 +1,4 @@
-import styles from "./Light.module.css"
+import styles from "./Status.module.css"
 import {useEffect, useState} from "react";
 import axios from 'axios';
 import Circle from "../util/Circle.tsx";
@@ -7,11 +7,11 @@ interface LightProps {
     name: string;
 }
 
-function Light(props:LightProps) {
+function Status(props:LightProps) {
     const [status,setStatus] = useState("disconnected");
     useEffect(() => {
         const url = "127.0.0.1:1313/status?sector="+props.name.toLowerCase();
-        let validResponses = ["good","ok","bad"]
+        const validResponses = ["good","ok","bad"]
         axios.get(url)
             .then(response => {
                 if(validResponses.includes(response.data)){
@@ -39,4 +39,4 @@ function Light(props:LightProps) {
     );
 }
 
-export default Light;
+export default Status;
