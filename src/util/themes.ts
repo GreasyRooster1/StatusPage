@@ -4,8 +4,10 @@ function setTheme(themeName:string) {
 }
 
 export function loadTheme() {
-    if (localStorage.getItem('theme')) {
-        setTheme(localStorage.getItem('theme')??"default-theme");
+    if (localStorage.getItem('theme')!=null) {
+        setTheme(localStorage.getItem('theme')!);
+    }else{
+        setTheme("default-theme");
     }
 }
 
