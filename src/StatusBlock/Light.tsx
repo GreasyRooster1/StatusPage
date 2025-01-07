@@ -10,13 +10,17 @@ function Light(props:LightProps) {
     const [status,setStatus] = useState("disconnected");
     useEffect(() => {
         const url = "127.0.0.1:1313/status?sector="+props.name.toLowerCase();
+        let validResponses = ["good","ok","bad"]
         axios.get(url)
             .then(response => {
-                // Handle the fetched data
-                console.log(response.data);
+                if(validResponses.includes(response.data)){
+                    setStatus(response.data);
+                }else{
+                    setStatus("disconnected");
+                }
             })
             .catch(error => {
-                // Handle errors
+                setStatus("disconnected");
                 console.error(error);
             });
         
@@ -28,7 +32,7 @@ function Light(props:LightProps) {
                 <span className={styles["title"]}>{props.name}</span>
             </div>
             <div className={styles["details"]}>
-                <span></span>
+                <span>details</span>
             </div>
         </div>
     );
