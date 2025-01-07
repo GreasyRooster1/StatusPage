@@ -5,7 +5,27 @@
 .light{
     border-radius:100%;
     aspect-ratio: 1;
-    width: 15px;
-    background:var(--status-light-bad);
+    width: 0.9em;
+    background:var(--status-light-disconnected);
     display: inline-block;
+}
+
+.bad{
+    background:var(--status-light-bad);
+}
+
+.ok{
+    background:var(--status-light-ok);
+}
+
+.good{
+    background:var(--status-light-good);
+}
+
+.disconnected{
+    background:var(--status-light-disconnected);
+}
+
+.title{
+    margin-left: 5px;
 }

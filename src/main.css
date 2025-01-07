@@ -16,4 +16,7 @@
 .theme-default{
   --status-block-background: #252430;
   --status-light-bad: #d64444;
+  --status-light-ok: #d6be44;
+  --status-light-good: #6dd644;
+  --status-light-disconnected: #7c7c7c;
 }
